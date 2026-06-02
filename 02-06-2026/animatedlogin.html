@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Login Form</title>
+    <style>
+        body{
+            background-color: rgb(154, 238, 238);
+        }
+        .form{
+            width:300px;
+            margin:300px auto;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 5%;
+            background-color:lightcyan;
+            animation: fadein 1s ease-out forwards;
+
+        }
+        h1{
+            margin-top: 5px;
+        }
+        input{
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px;
+            margin-bottom:20px;
+            border-radius: 10px;
+        }
+        label{
+            margin-bottom:10px;
+            display: block;
+            font-weight: bold;
+        }
+        input[type="submit"]{
+            transition: all 0.3s linear;
+        }
+        input[type="submit"]:hover{
+            transform: scale(1.09);
+            background-color:aqua;
+        }
+
+        @keyframes fadein {
+            from{
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <form action="#" class="form">
+            <h1>Login Here</h1>
+            <label for="username">Username:</label>
+            <input type="text" id="username" class="username">
+            <label for="password">Password:</label>
+            <input type="password" id="password" class="password">
+            <input type="submit" value="Login">
+        </form>
+    </div>
+    
+</body>
+</html>

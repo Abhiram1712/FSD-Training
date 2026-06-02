@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Signal</title>
+    <style>
+        .container {
+            width: 70px;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .red,
+        .yellow,
+        .green {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 10px;
+            /* opacity: 0.2; */
+            animation: traffic-loop 12s infinite;
+        }
+
+        /* Red light is active for the first 5 seconds (0% to 41.6%) */
+        .red {
+            background-color: red;
+            box-shadow: 0 0 20px red;
+            animation-delay: 0s;
+        }
+
+        /* Green light is active for the next 5 seconds (starts at 5s delay) */
+        .green {
+            background-color: #00FF00;
+            box-shadow: 0 0 20px #00FF00;
+            animation-delay: -5s;
+        }
+
+        /* Yellow light is active for the final 2 seconds (starts at 10s delay) */
+        .yellow {
+            background-color: yellow;
+            box-shadow: 0 0 20px yellow;
+            animation-delay: -10s;
+        }
+
+        /* Single keyframe to control the "ON" state duration */
+        @keyframes traffic-loop {
+
+            0%,
+            41.6% {
+                opacity: 1;
+            }
+
+            /* Light is ON for 5 seconds */
+            41.7%,
+            100% {
+                opacity: 0.2;
+            }
+
+            /* Light turns OFF */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="red">
+
+        </div>
+        <div class="yellow">
+
+        </div>
+        <div class="green">
+
+        </div>
+    </div>
+
+</body>
+
+</html>

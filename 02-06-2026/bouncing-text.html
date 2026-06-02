@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing-Text</title>
+    <style>
+        div{
+            width:300px;
+            height: 300px;
+            margin: 200px auto;
+            display: flex;;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        p{
+            display: inline;
+            background-color: white;
+            animation-name: bounce;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes bounce {
+            from{
+                transform: translateY(0px);
+            }
+            to{
+                transform: translateY(30vh);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>W</p>
+        <p>E</p>
+        <p>L</p>
+        <p>C</p>
+        <p>O</p>
+        <p>M</p>
+        <p>E</p>
+    </div>
+</body>
+</html>
+

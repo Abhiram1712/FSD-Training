@@ -14,8 +14,9 @@ body{
 
 /* Header Styles */
 #mainHeader{
-    background:linear-gradient(to right,#2196f3,#4caf50);
-    color:white;
+    background:linear-gradient(to right,red,yellow);
+    height: 100%;
+    color:lavender;
     padding:20px;
 }
 
@@ -23,7 +24,7 @@ body{
 .nav-menu{
     list-style:none;
     display:flex;
-    gap:20px;
+    gap: 15px;
 }
 
 .nav-menu li{
@@ -32,16 +33,16 @@ body{
 
 /* Link Styling */
 a:link{
-    color:white;
+    color:lavender;
     text-decoration:none;
 }
 
 a:visited{
-    color:yellow;
+    color:green;
 }
 
 a:hover{
-    color:black;
+    color:yellow;
 }
 
 a:active{

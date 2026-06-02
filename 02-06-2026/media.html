@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        nav{
+            background: linear-gradient(to right ,lightblue,white);
+            padding: 10px;
+            height:100%;
+        }
+        .menu{
+            display: inline-flex;
+            padding: 10px;
+            list-style: none;
+        }
+        .menu li{
+            padding: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a{
+            text-decoration: none;
+        }
+        @media screen and (max-width:768px) {
+            .menu{
+                display:inline-flex;
+                flex-direction: column;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+
+        </ul>
+    </nav>
+    
+</body>
+</html>

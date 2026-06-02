@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav-Transition</title>
+    <style>
+        nav{
+            display:flex;
+            height: 50px;
+            background:linear-gradient(to right,lightblue,white);
+            
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            display: inline;
+            margin:10px;
+        }
+        a{
+
+            text-decoration: none;
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-timing-function: ease;
+        }
+        a:hover{
+            font-size: large;
+            color:red;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Details</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

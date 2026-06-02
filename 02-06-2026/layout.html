@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        .layout {
+            width: 100%;
+            box-sizing: border-box;
+            display: grid;
+            gap:20px;
+            border:1px solid black;
+            padding: 10px;
+            grid-template-columns: auto auto;
+                grid-template-areas:
+                    "heading heading"
+                    "sidebar main";
+        }
+
+        .header {
+            border:1px solid black;
+            padding: 10px;
+            text-align: center;
+            grid-area: heading;
+        }
+
+        .content {
+            border:1px solid black;
+            padding: 10px;
+            grid-area: main;
+        }
+
+        .sidebar {
+            padding: 10px;
+            border:1px solid black;
+            grid-area: sidebar;
+        }
+
+        @media screen and (max-width:768px) {
+            .layout{
+                grid-template-columns: auto;
+                grid-template-areas:
+                    "heading"
+                    "main";
+            }
+            .sidebar{
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="header">
+            <h1>This is header</h1>
+        </div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam repudiandae unde non consequatur illo
+                enim
+                accusantium vero accusamus, harum, laboriosam assumenda nulla dolorem! Obcaecati excepturi
+                exercitationem
+                provident ipsam debitis voluptates, architecto dolor tempore eaque mollitia?</p>
+        </div>
+        <div class="sidebar">
+            <p>this is sidebar</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

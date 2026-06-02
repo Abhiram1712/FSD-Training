@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        .gallery {
+            display: grid;
+            border: 1px solid black;
+            padding: 20px;
+            gap: 20px;
+
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+        }
+
+
+        @media (max-width: 767px) {
+            .gallery {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) and (max-width: 2500px) {
+            .gallery {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <img src="/02-06-2026/assets/1.jpg">
+        <img src="/02-06-2026/assets/2.jpg">
+        <img src="/02-06-2026/assets/3.jpg">
+        <img src="/02-06-2026/assets/4.jpg">
+        <img src="/02-06-2026/assets/5.jpg">
+        <img src="/02-06-2026/assets/6.jpg">
+        <img src="/02-06-2026/assets/7.jpg">
+        <img src="/02-06-2026/assets/8.jpg">
+    </div>
+</body>
+
+</html>
