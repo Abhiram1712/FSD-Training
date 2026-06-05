@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body style="background: linear-gradient(to bottom,lightblue,white);">
+    <header class="container p-0 rounded-5 fw-semibold shadow-sm" style="background-color: white;" >
+        <nav class="navbar navbar-expand-sm rounded-3 mt-2">
+            <div class="container">
+                <img src="/04-06-2026/cvr.webp" class="navbar-brand" style="width: 40px;" alt="Logo">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navibar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navibar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button type="button" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown">Courses</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">CSE</a></li>
+                                <li><a class="dropdown-item" href="#">ECE</a></li>
+                                <li><a class="dropdown-item" href="#">EEE</a></li>
+                                <li><a class="dropdown-item" href="#">AIML</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-3">
+        <div class="d-flex flex-column justify-content-center align-items-center rounded-4 shadow-lg"
+            style="background: linear-gradient(to top,lightblue,white);">
+            <p class="h3 text-center my-4">Welcome to CVR College of Engineering</p>
+            <p class="text-center mx-5 mb-4 fw-semibold">The Cherabuddi Education Society was registered in January 1999 as an
+                NRI-promoted society. The Society aims
+                at creating a state-of-the-art engineering institution in association with leading NRI technology
+                professionals and well-known academicians of the twin states of Telangana & Andhra Pradesh. The Society
+                aims
+                to harness technical excellence with a commitment to the ethos of 'useful learning'. Read the Full Story
+            </p>
+            <a type="button" href="registration.html" class="btn btn-secondary mb-4" style="width: 30%;">Register Now</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="d-flex flex-row justify-content-around m-5">
+            <div class="card" style="width: 20rem;">
+                <div class="card-header fw-bold  text-center border border-1">Student Registration</div>
+                <img class="card-img-top border border-1" src="/04-06-2026/assets/Std.jpg" style="height: 300px;">
+                <div class="card-body border border-1">
+                    <div class="card-tile fw-bold ">Registration</div>
+                    <div class="card-text">Registration is done</div>
+                </div>
+                <div class="card-footer border border-1">
+                    <a href="about.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="card" style="width: 20rem;">
+                <div class="card-header fw-bold border border-1 text-center">Attendance Management </div>
+                <img class="card-img-top border border-1" src="/04-06-2026/assets/attendance.png"
+                    style="height: 300px;">
+                <div class="card-body border border-1">
+                    <div class="card-tile fw-bold ">Attendance</div>
+                    <div class="card-text">75% is mandatory</div>
+                </div>
+                <div class="card-footer border border-1">
+                    <a href="about.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="card" style="width: 20rem;">
+                <div class="card-header fw-bold text-center border border-1">Results Management </div>
+                <img class="card-img-top border border-1" src="/04-06-2026/assets/results.png" style="height: 300px;">
+                <div class="card-body border border-1">
+                    <div class="card-tile fw-bold ">Exam Results</div>
+                    <div class="card-text">Coming Soon</div>
+                </div>
+                <div class="card-footer border border-1">
+                    <a href="about.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bd-footer py-2 py-md-5 mt-5 bg-body-tertiary" style="background: linear-gradient(to top,lightblue,white);">
+        <div class="container text-body-secondary">
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/"
+                        aria-label="Bootstrap">
+                        <img src="/04-06-2026/cvr.webp" style="width: 30px;" class="me-xxl-2">
+
+                        <span class="fs-5 p-1">CVR College of Engineering</span>
+                    </a>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2">
+                            Designed and built with all the love in the world by the Abhiram.
+                        </li>
+                        <li class="mb-2">
+                            Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank"
+                                rel="license noopener">MIT</a>, docs <a
+                                href="https://creativecommons.org/licenses/by/3.0/" target="_blank"
+                                rel="license noopener">CC BY 3.0</a>.
+                        </li>
+                        <li class="mb-2">Currently v5.3.8.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
